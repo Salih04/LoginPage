@@ -9,7 +9,7 @@ app.use(express.json());
 
 const PORT = process.env.PORT || 3000;
 
-// MongoDB bağlantisi için URI'yi burada tanimlayin
+// MongoDB bağlantisi için URI'yi burada tanımladım
 const MONGO_URI = 'mongodb://localhost:27017/';
 
 // MongoDB bağlantisi
