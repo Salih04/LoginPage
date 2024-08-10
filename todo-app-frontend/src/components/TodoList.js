@@ -6,7 +6,7 @@ const TodoList = () => {
   const [title, setTitle] = useState('');
 
   useEffect(() => {
-    // Disable scrolling
+    // Scroll'u Engelleme
     document.body.style.overflow = 'hidden';
 
     const fetchTodos = async () => {
@@ -16,7 +16,7 @@ const TodoList = () => {
 
     fetchTodos();
 
-    // Clean up to enable scrolling again if needed
+    // Gerekirse kaydırmayı tekrar etkinleştirmek için temizle
     return () => {
       document.body.style.overflow = '';
     };
